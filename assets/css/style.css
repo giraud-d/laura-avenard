@@ -1,0 +1,146 @@
+/* MAIN */
+
+li {
+    list-style-position: inside;
+    list-style-type: disclosure-closed;
+    font-weight: 300;
+}
+
+.white {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: dimgrey;
+    text-decoration: underline;
+}
+
+.story-content p {
+    margin-bottom: 1rem;
+}
+
+.section-shorter-padding {
+    padding-top: 2rem;
+}
+
+.titre h1 {
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.titre h2 span {
+    color: black !important;
+}
+.story-content h1 span {
+    color: black !important;
+}
+
+.story-content h2 span {
+    color: black !important;
+}
+
+/* HEADER */
+
+.circular--square {
+    border-radius: 50%;
+}
+
+.circular--square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.circular--light {
+    border-radius: 20%;
+}
+
+.circular--light {
+    border-top-left-radius: 20% 20%;
+    border-top-right-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+    border-bottom-left-radius: 20% 20%;
+}
+
+.custom-header {
+    background-color: #F0E2CE;
+}
+
+.custom-footer {
+    background-color: #F0E2CE;
+}
+
+.custom-header-image {
+    max-height: 22rem;
+    padding-top: 2rem;
+}
+
+.navbar {
+    margin-top: 1em;
+    padding: 1rem 0 !important;
+}
+
+nav a {
+    text-transform: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 18px;
+}
+
+@media (max-width: 992px) {
+
+    .custom-nav-item {
+        text-align: left;
+        text-align: -moz-left;
+        text-align: -webkit-left;
+    }
+
+    .custom-header-image {
+        max-height: 18rem;
+    }
+
+    .custom-header {
+        background-color: #F0E2CE;
+        padding-bottom: 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        background-color: #F0E2CE !important;
+    }
+
+    .custom-header {
+        padding-bottom: 3.5em;
+    }
+}
+
+/* */
+
+.custom_accompagnement{
+    text-decoration: none;
+}
+
+/* MAP */
+
+.google-maps {
+    position: relative;
+    padding-bottom: 250px; /* This is the aspect ratio */
+    /*height: 0;*/
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
