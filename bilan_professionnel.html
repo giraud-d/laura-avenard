@@ -38,7 +38,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="banner-left col-lg-6">
                 <img class="d-flex mx-auto img-fluid circular--square custom-header-image"
-                     src="assets/images/laura-avenard-psychologue.jpg" alt="">
+                     src="assets/images/psychologue-saint-herblain-laura-avenard.jpg" alt="">
             </div>
             <div class="col-lg-6">
                 <div class="story-content titre">
@@ -76,21 +76,41 @@
 </div>
 
 <section class="about-area pt-100 pb-50">
-    <div class="container">
+    <div class="container pb-25">
         <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <div class="story-content">
                     <h1><span class="sp-2">Le Bilan Professionnel</span></h1>
-
                     <p class="mt-20">
                         Dans le cadre de ces séances, nous pouvons aborder différentes dimensions de votre <span
                             class="sp-2">vie professionnelle</span> selon vos besoins et éventuels projets.
                         C’est un temps et un espace dédiés à la <span class="sp-2">clarification de votre situation actuelle</span>
                         et à <span class="sp-2">l’élaboration de celle désirée</span>.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <div id="custom-toggle" class="row col-lg-12 btn-group btn-group-toggle" data-toggle="buttons">
+            <div class="col-md-6 d-flex align-items-stretch">
+                <label class="btn btn-primary w-100">
+                    <input type="radio" id="input-expert">(Re)devenez expert<br>de vous-même
+                </label>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch">
+                <label class="btn btn-primary w-100">
+                    <input type="radio" id="input-parcours">Clarifiez votre parcours et<br>préparez le changement
+                </label>
+            </div>
+        </div>
+    </div>
 
-                    <h2><span class="sp-2">(Re)devenez expert de vous-même : </span></h2>
+    <div class="container custom_toggle-section" id="input-expert-section">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="story-content">
                     <p class="mt-20">
                         Vous vivez une situation professionnelle vous amenant à ressentir :
                     </p>
@@ -109,15 +129,22 @@
                         et un environnement professionnel en accord avec ce que vous êtes.
                     </p>
 
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <h2><span class="sp-2">Clarifier votre parcours et préparer le changement :  </span></h2>
+    <div class="container custom_toggle-section" id="input-parcours-section">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="story-content">
                     <p class="mt-20">
                         Si vous avez un parcours atypique (expériences diverses dans des domaines variés) ou un projet
                         de changement de poste ou d’entreprise, peut-être souhaitez-vous :
                     </p>
                     <ul>
                         <li>Gagner en clarté sur votre parcours et sur la façon de le présenter</li>
-                        <li> Identifier vos compétences pour mieux les valoriser</li>
+                        <li>Identifier vos compétences pour mieux les valoriser</li>
                         <li>Etre accompagné dans la préparation de votre recherche d’emploi (enquêtes métiers, CV,
                             lettre de motivation, codes actuels du marché, etc.)
                         </li>
@@ -130,14 +157,10 @@
 
                 </div>
             </div>
-            <div class="banner-left col-lg-4">
-                <img class="d-flex mx-auto img-fluid circular--light"
-                     src="assets/images/img_g_poupard.jpg" alt="">
-            </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-25">
         <div class="row align-items-center">
             <div class="banner-left col-lg-4">
                 <img class="d-flex mx-auto img-fluid circular--light"
@@ -148,17 +171,23 @@
                     <h2><span class="sp-2">Informations pratiques</span></h2>
 
                     <p class="mt-20">
-                        Dans un premier temps, nous nous rencontrons dans le cadre d’un rendez-vous de 50 minutes (tarif 60 euros) afin de faire le point sur votre situation et sur vos besoins.
+                        Dans un premier temps, nous nous rencontrons dans le cadre d’un rendez-vous de 50 minutes (tarif
+                        60 euros) afin de faire le point sur votre situation et sur vos besoins.
                     </p>
                     <p class="mt-20">
                         Chaque séance de bilan professionnel dure 1h30 pour un tarif de 105 euros.
-                        Selon vos besoins et votre situation, il est recommandé de prévoir entre 5 et 8 séances d’accompagnement.
+                        Selon vos besoins et votre situation, il est recommandé de prévoir entre 5 et 8 séances
+                        d’accompagnement.
                     </p>
                     <p class="mt-20">
-                        Entre les séances et afin de profiter au mieux de nos temps d’échange et d’élaboration, je vous proposerai des activités types questionnaires à réaliser de votre côté. Ces éléments nous serviront de matière première pour la séance suivante et vous permettront de mettre en mouvement et de structurer progressivement votre pensée.
+                        Entre les séances et afin de profiter au mieux de nos temps d’échange et d’élaboration, je vous
+                        proposerai des activités types questionnaires à réaliser de votre côté. Ces éléments nous
+                        serviront de matière première pour la séance suivante et vous permettront de mettre en mouvement
+                        et de structurer progressivement votre pensée.
                     </p>
                     <p class="mt-20">
-                        Les RDV peuvent avoir lieu en présentiel au cabinet ou en visio selon vos souhaits et possibilités.
+                        Les RDV peuvent avoir lieu en présentiel au cabinet ou en visio selon vos souhaits et
+                        possibilités.
                     </p>
 
                 </div>
@@ -210,6 +239,20 @@
 <script src="js/jquery.counterup.min.js"></script>
 <script src="js/waypoints.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#custom-toggle input:radio").change(function () {
+            var selectedOption = $(this).attr('id');
+
+            // Hide all sections
+            $(".custom_toggle-section").hide();
+
+            // Show the corresponding section
+            $("#" + selectedOption + "-section").show();
+        });
+    });
+</script>
 
 </body>
 </html>
