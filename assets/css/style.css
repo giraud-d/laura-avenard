@@ -24,14 +24,13 @@
     size-adjust: 250%;
 }
 
-body, li, h3, h4 {
+body, p, li, blockquote, h3, h4 {
     font-family: 'LouisGeorgeCafeLight', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -40,14 +39,13 @@ body, li, h3, h4 {
 
 
 
-h1, h2 {
+h1, h2, .upper-font {
     font-family: 'BetterGrade', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -55,24 +53,23 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 5rem !important;
+    font-size: 3.5rem !important;
 }
 
 h2 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
 }
 
 h3 {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
 }
 
-h4 {
-    font-size: 1.66rem !important;
+h4, blockquote {
+    font-size: 1.5rem !important;
 }
 
-
-body, li {
-    font-size: 1.33rem !important;
+body, p, li {
+    font-size: 1.15rem !important;
 }
 
 li {
@@ -104,6 +101,10 @@ section {
     background-color: #F7F1E8;
 }
 
+.story-content-shorter {
+    margin-bottom: 20px !important;
+}
+
 /* HEADER */
 
 header, footer {
@@ -115,12 +116,21 @@ header > div:first-child {
 }
 
 .custom-header-image {
-    max-height: 16rem;
+    max-height: 12rem;
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.header-link-display {
+    margin-top: 1rem;
 }
 
 .hrSeparator {
     border: none;
-    height: 5px;
+    height: 2px;
     background-color: #434d4e;
     margin: 0;
 }
@@ -135,6 +145,7 @@ header > div:first-child {
 
 .active {
     color: #434d4e;
+    border-color: #434d4e !important;
 }
 
 .circular--square {
@@ -159,10 +170,18 @@ header > div:first-child {
     border-bottom-left-radius: 20% 20%;
 }
 
+.navbar {
+    margin-right: 0;
+    background-color: #FFFFFF !important;
+}
+.navbar > .container {
+
+}
+
 nav a {
     text-transform: none;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     margin: 0 18px;
 }
@@ -187,16 +206,54 @@ nav a {
         background-color: #d6c9bb;
         padding-bottom: 1em;
     }
+
+    button, label {
+        height: auto;
+        white-space: normal !important;
+    }
+
+    .illustration-lg-optional {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        border: 2px solid #434d4e !important;
+    }
 }
 
-@media (max-width: 767px) {
-    nav {
-        background-color: #d6c9bb !important;
-    }
+@media (max-width: 768px) {
 
     .custom-header {
         padding-bottom: 3.5em;
     }
+
+    .story-content {
+        text-align: left;
+    }
+
+    #custom-toggle {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .illustration-img {
+        max-height: 16rem;
+    }
+
+    nav {
+        top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .illustration-img {
+        max-height: 12rem;
+    }
+
+    .illustration-sm-optional {
+        display: none !important;
+    }
+
 }
 
 /* TOGGLE */
@@ -234,7 +291,6 @@ nav a {
     background-color: #434d4e;
     color: white;
 }
-
 
 #custom-toggle > div > label input {
     margin-bottom: 0.5rem;

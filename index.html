@@ -33,54 +33,56 @@
 <header>
     <div class="container">
         <div class="row align-items-center justify-content-center">
-            <div class="banner-left col-lg-3">
+            <div class="col-md-3">
                 <img class="d-flex mx-auto img-fluid circular--square custom-header-image"
                      src="assets/images/psychologue-saint-herblain-laura-avenard.jpg"
                      alt="Laura Avenard Psychologue à Saint Herblain ">
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-3">
                 <h3>Laura Avenard</h3>
                 <br>
                 <h3>Psychologue pour adultes</h3>
             </div>
-            <div class="col-lg-3">
-                <p><a class="no-underline" href="#gmap">La maison d'Hygie <br>16 Rue de la Chauvinière <br>44800
+            <div class="col-md-3 header-link-display">
+                <p><a class="header-link" href="#gmap">La maison d'Hygie <br>16 Rue de la Chauvinière <br>44800
                     Saint-Herblain</a></p>
-                <p><a class="no-underline" href="tel:0780956225">07 80 95 62 25</a></p>
+                <p><a class="header-link" href="tel:0780956225">07 80 95 62 25</a></p>
             </div>
-            <div class="col-lg-3">
-                <h3 class="header-text-color">Thérapie brêve humaniste</h3>
+            <div class="col-md-3 header-link-display">
+                <h3 class="header-text-color">Thérapie brève humaniste</h3>
             </div>
         </div>
     </div>
-
     <hr class="hrSeparator">
-    <nav class="container navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <div class="navbar-nav d-flex align-items-center header-text-color center">
-                <a class="nav-item nav-link custom-nav-item active" href="#">Présentation</a>
-                <a class="nav-item nav-link custom-nav-item" href="parcours.html">Parcours</a>
-                <a class="nav-item nav-link custom-nav-item" href="consultations_psychothérapeutiques.html">Psychothérapie</a>
-                <a class="nav-item nav-link custom-nav-item" href="bilan_professionnel.html">Bilan Professionnel</a>
-                <a class="nav-item nav-link custom-nav-item" href="ateliers_de_parole.html">Ateliers De Parole</a>
-                <a class="nav-item nav-link custom-nav-item" target="_blank"
-                   href="https://www.doctolib.fr/psychologue/paris/marie-bielle">Prendre RDV<span
-                        class="lnr lnr-arrow-right"></span>
-                </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="navbar-nav d-flex align-items-center header-text-color center">
+                    <a class="nav-item nav-link custom-nav-item active" href="#">Présentation</a>
+                    <a class="nav-item nav-link custom-nav-item" href="parcours.html">Parcours</a>
+                    <a class="nav-item nav-link custom-nav-item" href="consultations_psychothérapeutiques.html">Psychothérapie</a>
+                    <a class="nav-item nav-link custom-nav-item" href="bilan_professionnel.html">Bilan Professionnel</a>
+                    <a class="nav-item nav-link custom-nav-item" href="ateliers_de_parole.html">Ateliers De Parole</a>
+                    <a class="nav-item nav-link custom-nav-item" target="_blank"
+                       href="https://www.doctolib.fr/psychologue/paris/marie-bielle">Prendre RDV<span
+                            class="lnr lnr-arrow-right"></span>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
     <hr class="hrSeparator">
+
 </header>
 
 <section class="about-area pt-50 pb-50">
     <div class="container center">
         <div class="row align-items-center">
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 <div class="story-content">
                     <h1>Bienvenue</h1>
 
@@ -117,10 +119,10 @@
 <section class="about-area pb-50">
     <div class="container pb-25 center">
         <div class="row align-items-center">
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 <div class="story-content">
                     <h1>Les accompagnements</h1>
-                    <p class="mt-50">
+                    <p class="mt-50 story-content-shorter">
                         En fonction de vos besoins et attentes, je vous propose <span class="sp-2">trois types d'accompagnements</span>
                     </p>
                 </div>
@@ -129,9 +131,9 @@
     </div>
 
     <div class="container">
-        <div id="custom-toggle" class="row col-lg-12 btn-group btn-group-toggle" data-toggle="buttons">
+        <div id="custom-toggle" class="row col-md-12 btn-group btn-group-toggle" data-toggle="buttons">
             <div class="col-md-4 d-flex align-items-stretch">
-                <label class="btn btn-primary w-100">
+                <label class="btn btn-primary w-100 active">
                     <input type="radio" id="input-psy">Consultations<br>psychothérapeutiques
                 </label>
             </div>
@@ -148,14 +150,14 @@
         </div>
     </div>
 
-    <div class="container custom_toggle-section" id="input-psy-section">
+    <div class="container custom_toggle-section" id="input-psy-section" style="display: block">
         <div class="row align-items-center">
-            <div class="banner-left col-lg-3">
-                <img class="d-flex mx-auto img-fluid circular--light"
+            <div class="col-md-3">
+                <img class="d-flex mx-auto img-fluid circular--light illustration-img"
                      src="assets/images/psychologue-saint-herblain-laura-avenard-consultation-psychothérapeutique.png"
                      alt="">
             </div>
-            <div class="col-lg-9">
+            <div class="col-md-9">
                 <div class="story-content">
                     <p class="mt-20">
                         Des <span class="sp-2">consultations psychothérapeutiques</span> alliant écoute active et
@@ -165,14 +167,14 @@
                     </p>
                     <ul>
                         <li>Angoisses</li>
-                        <li> Dépression</li>
-                        <li> Phobies</li>
-                        <li> Anxiété chronique</li>
-                        <li> Burn-out professionnel ou parental</li>
-                        <li> Souffrance au travail</li>
-                        <li> Perte ou manque de confiance en soi</li>
-                        <li> Besoin de faire le point et de retrouver du sens</li>
-                        <li> Etc.</li>
+                        <li>Dépression</li>
+                        <li>Phobies</li>
+                        <li>Anxiété chronique</li>
+                        <li>Burn-out professionnel ou parental</li>
+                        <li>Souffrance au travail</li>
+                        <li>Perte ou manque de confiance en soi</li>
+                        <li>Besoin de faire le point et de retrouver du sens</li>
+                        <li>Etc.</li>
                     </ul>
                     <p class="mt-20">
                         La durée de l’accompagnement varie selon la nature de vos besoins.
@@ -181,10 +183,13 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-md-3">
+                <blockquote>« La blessure est l’endroit par lequel peut entrer la lumière. »</blockquote>
+            </div>
+            <div class="col-md-9">
                 <div class="story-content">
-                    <h3><span class="sp-2">Pourquoi ?</span></h3>
-                    <p class="mt-20">
+                    <h3><span class="sp-2 upper-font">Pourquoi ?</span></h3>
+                    <p class="mt-20 story-content-shorter">
                         Progressivement, comprendre <span class="sp-2">ses mécanismes</span> et <span class="sp-2">mettre du sens</span>
                         sur son vécu afin de :
                     </p>
@@ -200,12 +205,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="banner-left col-lg-4">
-                <blockquote>« La blessure est l’endroit par lequel peut entrer la lumière. »</blockquote>
-            </div>
+
         </div>
         <div class="row align-items-center">
-            <div class="col-lg-12 pt-25">
+            <div class="col-md-12 pt-25">
                 <div class="story-content">
                     <a href="consultations_psychothérapeutiques.html" class="no-underline">
                         <button type="button" class="btn btn-primary btn-lg btn-block">Retrouver toutes les
@@ -219,11 +222,11 @@
 
     <div class="container custom_toggle-section" id="input-bilan-section">
         <div class="row align-items-center">
-            <div class="banner-left col-lg-3">
-                <img class="d-flex mx-auto img-fluid circular--light"
+            <div class="col-md-3">
+                <img class="d-flex mx-auto img-fluid circular--light illustration-img"
                      src="assets/images/psychologue-saint-herblain-laura-avenard-bilan-professionnel.png" alt="">
             </div>
-            <div class="col-lg-9">
+            <div class="col-md-9">
                 <div class="story-content">
                     <p class="mt-20">
                         Des séances de <span class="sp-2">bilan professionnel</span> : en individuel, par le biais de
@@ -234,10 +237,13 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-md-3">
+                <blockquote>« Ils ne savaient pas que c’était impossible alors ils l’ont fait. »</blockquote>
+            </div>
+            <div class="col-md-9">
                 <div class="story-content">
-                    <h3><span class="sp-2">Pourquoi ?</span></h3>
-                    <p class="mt-20">
+                    <h3><span class="sp-2 upper-font">Pourquoi ?</span></h3>
+                    <p class="mt-20 story-content-shorter">
                         Vous avez :
                     </p>
                     <ul>
@@ -260,12 +266,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="banner-left col-lg-4">
-                <blockquote>« Ils ne savaient pas que c’était impossible alors ils l’ont fait. »</blockquote>
-            </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-lg-12 pt-25">
+            <div class="col-md-12 mt-10 pt-25">
                 <div class="story-content">
                     <a href="bilan_professionnel.html" class="no-underline">
                         <button type="button" class="btn btn-primary btn-lg btn-block">Retrouver toutes les
@@ -279,11 +282,11 @@
 
     <div class="container custom_toggle-section" id="input-atelier-section">
         <div class="row align-items-center pb-25">
-            <div class="banner-left col-lg-3">
-                <img class="d-flex mx-auto img-fluid circular--light"
+            <div class="col-md-3">
+                <img class="d-flex mx-auto img-fluid circular--light illustration-img"
                      src="assets/images/psychologue-saint-herblain-laura-avenard-atelier-de-parole.png" alt="">
             </div>
-            <div class="col-lg-9">
+            <div class="col-md-9">
                 <div class="story-content">
                     <p class="mt-20">
                         Des séances d’<span class="sp-2">ateliers de parole</span> réunissant 4 à 7 participants.
@@ -301,10 +304,13 @@
             </div>
         </div>
         <div class="row align-items-center pb-25">
-            <div class="col-lg-8">
+            <div class="col-md-3">
+                <blockquote>« Le sens que l’on donne aux choses modifie la façon dont on les vit. »</blockquote>
+            </div>
+            <div class="col-md-9">
                 <div class="story-content">
-                    <h3>Pourquoi ?</h3>
-                    <p class="mt-20">
+                    <h3><span class="sp-2 upper-font">Pourquoi ?</span></h3>
+                    <p class="mt-20 story-content-shorter">
                         Entre <span class="sp-2">partage, intelligence collective et psycho-éducation</span>,
                         les ateliers de parole vous offrent l’opportunité de :
                     </p>
@@ -325,14 +331,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="banner-left col-lg-4">
-                <blockquote>« Le sens que l’on donne aux choses modifie la façon dont on les vit. »</blockquote>
-            </div>
+
         </div>
         <div class="row align-items-center pb-25">
-            <div class="col-lg-8">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-8">
                 <div class="story-content">
-                    <h3>Les thèmes proposés sont :</h3>
+                    <h4 class="mb-10">Les thèmes proposés sont :</h4>
                     <ul>
                         <li>La <span class="sp-2">parentalité</span></li>
                         <li>La <span class="sp-2">vie professionnelle</span></li>
@@ -340,8 +346,8 @@
                 </div>
             </div>
         </div>
-        <div class="row align-items-center pb-25">
-            <div class="col-lg-12">
+        <div class="row align-items-center mt-10 pb-25">
+            <div class="col-md-12">
                 <div class="story-content">
                     <a href="ateliers_de_parole.html" class="no-underline">
                         <button type="button" class="btn btn-primary btn-lg btn-block">Retrouver toutes les
@@ -361,20 +367,19 @@
                 <h2><span>Contact</span></h2>
                 <p class="mt-60">Téléphone : <span class="sp-2"><a
                         href="tel:0780956225">07 80 95 62 25</a></span>
-                <p class="mt-40">Adresse : <span class="sp-2">La maison d'Hygie <br><br>16 Rue de la Chauvinière <br><br>44800 Saint-Herblain</span>
-                </p>
+                <p class="mt-40">Mail : <span class="sp-2"><a
+                        href="mailto:laura.avenard.psy@gmail.com">laura.avenard.psy@gmail.com </a></span></p>
                 <p class="mt-40">Doctolib : <span class="sp-2"><a
                         href="https://www.doctolib.fr/psychologue/paris/marie-bielle"
                         target="_blank">Prendre un RDV</a></span></p>
-                <p class="mt-40">Mail : <span class="sp-2" style="text-transform: lowercase"><a
-                        href="mailto:laura.avenard.psy@gmail.com">laura.avenard.psy@gmail.com </a></span></p>
-                <p class="mt-40">Horaires : <span class="sp-2">De 9 H à 18 H</span> le lundi, mardi et jeudi</p>
-                <!--                    <p class="mt-30"><span class="sp-2"><a
-                                            href="https://www.instagram.com/babosbreton/"
-                                            target="_blank">Mon instagram professionnel</a></span></p>-->
+                <p class="mt-40">Adresse : <span class="sp-2">La maison d'Hygie <br>16 Rue de la Chauvinière <br>44800 Saint-Herblain</span>
+                </p>
                 <p class="mt-40">
                     Numéro ADELI - Profession psychologue : 449317098
                 </p>
+                <p class="mt-40 mb-20"><span class="sp-2"><a
+                        href="/mentions_legales.html">Mentions Légales</a></span></p>
+
             </div>
 
             <div class="col-lg-6 google-maps" id="gmap">
