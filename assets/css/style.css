@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'LouisGeorgeCafeLight';
-    src: url('../../fonts/LouisGeorgeCafeLight.eot');
-    src: url('../../fonts/LouisGeorgeCafeLight.eot') format('embedded-opentype'),
-    url('../../fonts/LouisGeorgeCafeLight.woff2') format('woff2'),
-    url('../../fonts/LouisGeorgeCafeLight.woff') format('woff'),
-    url('../../fonts/LouisGeorgeCafeLight.ttf') format('truetype'),
-    url('../../fonts/LouisGeorgeCafeLight.svg') format('svg');
+    src: url('../fonts/LouisGeorgeCafeLight.eot');
+    src: url('../fonts/LouisGeorgeCafeLight.eot') format('embedded-opentype'),
+    url('../fonts/LouisGeorgeCafeLight.woff2') format('woff2'),
+    url('../fonts/LouisGeorgeCafeLight.woff') format('woff'),
+    url('../fonts/LouisGeorgeCafeLight.ttf') format('truetype'),
+    url('../fonts/LouisGeorgeCafeLight.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     size-adjust: 110%;
@@ -15,10 +15,10 @@
 
 @font-face {
     font-family: 'BetterGrade';
-    src: url('../../fonts/BetterGrade.eot');
-    src: url('../../fonts/BetterGrade.eot') format('embedded-opentype'),
-    url('../../fonts/BetterGrade.woff') format('woff'),
-    url('../../fonts/BetterGrade.svg') format('svg');
+    src: url('../fonts/BetterGrade.eot');
+    src: url('../fonts/BetterGrade.eot') format('embedded-opentype'),
+    url('../fonts/BetterGrade.woff') format('woff'),
+    url('../fonts/BetterGrade.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     size-adjust: 250%;
@@ -84,6 +84,11 @@ span {
 
 .no-underline {
     text-decoration: none;
+}
+
+.btn-underline {
+    text-decoration: underline !important;
+    padding: 10px 40px 12px;
 }
 
 
@@ -306,9 +311,8 @@ button, label {
 
 /* TOGGLE */
 
-.custom_toggle-section {
+.custom-toggle-section, .custom-toggle-arrow {
     display: none;
-    text-decoration: none;
 }
 
 #custom-toggle > div {
@@ -352,3 +356,13 @@ button, label {
     height: 100% !important;
 }
 
+/* OTHERS */
+
+.alert-light {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#inside-office-pic {
+    max-height: 18rem;
+}
