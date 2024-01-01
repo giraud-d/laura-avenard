@@ -11,6 +11,7 @@
     font-weight: normal;
     font-style: normal;
     size-adjust: 110%;
+    font-size-adjust: 1.1;
 }
 
 @font-face {
@@ -22,15 +23,17 @@
     font-weight: normal;
     font-style: normal;
     size-adjust: 250%;
+    font-size-adjust: 2.5;
 }
 
-body, p, li, blockquote, h3, h4 {
+body, p, li, blockquote, h3, h4, h5 {
     font-family: 'LouisGeorgeCafeLight', ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
+    text-align: justify;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -67,6 +70,10 @@ h4, blockquote {
     font-size: 1.5rem !important;
 }
 
+h5 {
+    font-size: 1.25rem !important;
+}
+
 body, p, li {
     font-size: 1.15rem !important;
 }
@@ -80,6 +87,11 @@ li {
 span {
     color: #434d4e;
     font-weight: 600;
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
 }
 
 .no-underline {
@@ -101,6 +113,18 @@ a {
     text-decoration: underline;
 }
 
+.container {
+    max-width: 1000px;
+}
+
+.navbar > .container {
+    max-width: none;
+    width: auto;
+}
+
+#navbarToggler {
+}
+
 section {
     background-color: #F7F1E8;
 }
@@ -116,7 +140,7 @@ header, footer {
 }
 
 header > div:first-child {
-    padding: 1rem 0;
+    padding: 4rem 0;
 }
 
 .custom-header-image {
@@ -125,11 +149,15 @@ header > div:first-child {
 
 .header-link {
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
-.header-link-display {
+.header-right-content {
     margin-top: 1rem;
+}
+
+.header-right-content > img {
+    padding: 1rem 3rem 0;
 }
 
 .hrSeparator {
@@ -139,7 +167,7 @@ header > div:first-child {
     margin: 0;
 }
 
-.header-text-color, .footer-text-color, nav a, .nav-link, .navbar-nav {
+.header-text-color, nav a, .nav-link, .navbar-nav {
     color: #759295;
 }
 
@@ -148,10 +176,7 @@ header > div:first-child {
 }
 
 .circular--square {
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
+    border-radius: 50% 50%;
 }
 
 .circular--light {
@@ -159,10 +184,7 @@ header > div:first-child {
 }
 
 .circular--light {
-    border-top-left-radius: 20% 20%;
-    border-top-right-radius: 20% 20%;
-    border-bottom-right-radius: 20% 20%;
-    border-bottom-left-radius: 20% 20%;
+    border-radius: 20% 20%;
 }
 
 .navbar {
@@ -245,15 +267,6 @@ button, label {
         text-align: -webkit-left;
     }
 
-    .custom-header {
-        background-color: #d6c9bb;
-        padding-bottom: 1em;
-    }
-
-    .illustration-lg-optional {
-        display: none !important;
-    }
-
     .navbar-toggler {
         border: 2px solid #434d4e !important;
     }
@@ -263,10 +276,6 @@ button, label {
 
     .header-text, .header-link {
         text-align: center;
-    }
-
-    .custom-header {
-        padding-bottom: 3.5em;
     }
 
     .story-content {
@@ -300,11 +309,11 @@ button, label {
     }
 
     h1 {
-        font-size: 2.5rem !important;
+        font-size: 2.25rem !important;
     }
 
     h2 {
-        font-size: 2rem !important;
+        font-size: 1.75rem !important;
     }
 
 }
