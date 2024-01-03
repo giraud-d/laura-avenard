@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     var nav = $('.navbar');
     var navHeight = nav.outerHeight();
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
             nav.removeClass('fixed-top');
         }
     });
-});
+});*/
 
 $(document).ready(function(){
 	"use strict";

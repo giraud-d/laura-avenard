@@ -93,6 +93,10 @@ blockquote {
     font-style: italic;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .no-underline {
     text-decoration: none;
 }
