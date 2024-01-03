@@ -37,7 +37,7 @@ body, p, li, blockquote, h3, h4, h5 {
 }
 
 
-h1, h2, .upper-font {
+h1, h2 {
     font-family: 'BetterGrade', 'Brush Script MT', cursive;
     speak: none;
     font-style: normal;
@@ -50,16 +50,15 @@ h1, h2, .upper-font {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* BetterGrade small font PB */
 
 h1 {
-    font-size: 8rem !important;
-    /* font-size: 3.5rem !important; */
+    font-size: 8.5rem !important;
+    line-height: 2rem;
 }
 
 h2 {
-    font-size: 5rem !important;
-    /* font-size: 2.25rem !important; */
+    font-size: 5.9rem !important;
+    line-height: 3rem;
 }
 
 h3 {
@@ -291,26 +290,15 @@ button, label {
         top: 0;
     }
 
-    #custom-toggle-arrow {
-        display: none;
-    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .illustration-img {
         max-height: 12rem;
     }
 
-    .illustration-sm-optional {
+    .illustration-sm-optional, #custom-toggle-arrow {
         display: none !important;
-    }
-
-    h1 {
-        font-size: 2.5rem !important;
-    }
-
-    h2 {
-        font-size: 2rem !important;
     }
 
 }
@@ -354,7 +342,7 @@ button, label {
 }
 
 .custom-toggle-section {
-    padding: 0 4rem;
+    padding: 2rem 4rem 0;
 }
 
 /* MAP */
