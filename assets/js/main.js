@@ -14,6 +14,31 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    var nav = $('.navbar');
+    var navHeight = nav.outerHeight();
+
+    function handleScroll() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= navHeight) {
+            nav.addClass('fixed-top');
+        } else {
+            nav.removeClass('fixed-top');
+        }
+    }
+
+    handleScroll();
+
+    $(window).on('scroll resize', function () {
+        if (window.matchMedia('(max-width: 992px)').matches) {
+            handleScroll();
+        } else {
+            nav.removeClass('fixed-top');
+        }
+    });
+});
+
 $(document).ready(function(){
 	"use strict";
 
