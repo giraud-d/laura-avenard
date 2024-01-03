@@ -305,6 +305,11 @@ button, label {
         display: none !important;
     }
 
+    h2 {
+        font-size: 5rem !important;
+        line-height: 3rem;
+    }
+
 }
 
 /* TOGGLE */
