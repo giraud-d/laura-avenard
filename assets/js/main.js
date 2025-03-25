@@ -4,12 +4,11 @@ $(document).ready(function () {
 
         // Hide all sections
         $(".custom-toggle-section").hide();
-        $(".custom-toggle-arrow").hide();
+        $(".custom-toggle-chevron").hide();
 
         // Show the corresponding section
         $("#" + selectedOption + "-section").show();
-        console.log("#" + selectedOption + "-arrow")
-        $("#" + selectedOption + "-arrow").show();
+        $("#" + selectedOption + "-chevron").show();
 
     });
 });
